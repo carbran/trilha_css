@@ -1,0 +1,36 @@
+/* https://www.w3schools.com/colors/colors_names.asp */
+#pre-definidas {
+    color: deeppink;
+}
+
+#current-color {
+    color: orange;
+    border: 2px solid currentColor; /* assume a cor indicada no color*/
+}
+
+/* https://www.w3schools.com/css/css_colors_hex.asp */
+#hex {
+    color: #11ff11;
+}
+
+#hex-transparencia {
+    color: #11ff1180;
+}
+
+/* https://www.w3schools.com/css/css_colors_rgb.asp */
+#rgb {
+    color: rgb(30, 215, 221);
+}
+
+#rgba {
+    color: rgba(30, 215, 221, .5);
+}
+
+/* https://www.w3schools.com/css/css_colors_hsl.asp */
+#hsl {
+    color: hsl(270, 100%, 50%);
+}
+
+#hsla {
+    color: hsla(270, 100%, 50%, 50%);
+}
