@@ -1,0 +1,97 @@
+div {
+    margin-bottom: 30px;
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    color: azure;
+}
+/* https://projects.verou.me/css3patterns/ */
+.exemplo {
+    /* background-image: linear-gradient(green, purple); */
+    /* background-image: radial-gradient(green, purple); */
+    /* background-image: url("https://i.ytimg.com/vi/8BQR-E-P0pc/sddefault.jpg"); */
+    /* background-image: url( "../images/Lovepik_eye_moutrh.png"), url("https://i.ytimg.com/vi/8BQR-E-P0pc/sddefault.jpg"); */ /*a primeira imagem se sobrepõe*/
+    background:
+        linear-gradient(-45deg, white 25%, transparent 25%, transparent 75%, black 75%, black) 0 0,
+        linear-gradient(-45deg, black 25%, transparent 25%, transparent 75%, white 75%, white) 1em 1em,
+        linear-gradient(45deg, black 17%, transparent 17%, transparent 25%, black 25%, black 36%, transparent 36%, transparent 64%, black 64%, black 75%, transparent 75%, transparent 83%, black 83%) 1em 1em;
+    background-color: white;
+    background-size: 2em 2em;
+}
+
+.auto {
+    background-image: url("https://i.ytimg.com/vi/8BQR-E-P0pc/sddefault.jpg");
+}
+
+.cover{
+    background-image: url("https://i.ytimg.com/vi/8BQR-E-P0pc/sddefault.jpg");
+    background-size: cover;
+}
+
+.contain{
+    background-image: url("https://i.ytimg.com/vi/8BQR-E-P0pc/sddefault.jpg");
+    background-size: contain;
+}
+
+.tamanho{
+    background-image: url("https://i.ytimg.com/vi/8BQR-E-P0pc/sddefault.jpg");
+    background-size: 50%;
+}
+
+.exemplo-x-y{
+    background-image: url("https://i.ytimg.com/vi/8BQR-E-P0pc/sddefault.jpg");
+    background-size: 200px 100%;
+}
+
+.exemplo-camadas{
+    background-image: url( "../images/Lovepik_eye_moutrh.png"), url("https://i.ytimg.com/vi/8BQR-E-P0pc/sddefault.jpg");
+    background-size: cover, contain;
+}
+
+.repeat {
+    background-image: url("https://i.ytimg.com/vi/8BQR-E-P0pc/sddefault.jpg");
+    background-size: 120px;
+}
+
+.repeat-x {
+    background-image: url("https://i.ytimg.com/vi/8BQR-E-P0pc/sddefault.jpg");
+    background-size: 120px;
+    background-repeat: repeat-x;
+}
+
+.repeat-y {
+    background-image: url("https://i.ytimg.com/vi/8BQR-E-P0pc/sddefault.jpg");
+    background-size: 120px;
+    background-repeat: repeat-y;
+}
+
+.space {
+    background-image: url("https://i.ytimg.com/vi/8BQR-E-P0pc/sddefault.jpg");
+    background-size: 120px;
+    background-repeat: space;
+}
+
+.round {
+    background-image: url("https://i.ytimg.com/vi/8BQR-E-P0pc/sddefault.jpg");
+    background-size: 120px;
+    background-repeat: round;
+}
+
+.no-repeat {
+    background-image: url("https://i.ytimg.com/vi/8BQR-E-P0pc/sddefault.jpg");
+    background-size: 120px;
+    background-repeat: no-repeat;
+}
+
+.defined-repeat {
+    background-image: url("https://i.ytimg.com/vi/8BQR-E-P0pc/sddefault.jpg");
+    background-size: 120px;
+    background-repeat: repeat space; /*primeiro valor é o eixo x e segundo o eixo y*/
+}
+
+.ex-position {
+    background-image: url("https://i.ytimg.com/vi/8BQR-E-P0pc/sddefault.jpg");
+    background-size: 120px;
+    background-repeat: no-repeat;
+    background-position: 50px; /*top bottom left right center, ou em px ou em %, dois valores representam eixo x e eixo y, respectivamente*/
+}
