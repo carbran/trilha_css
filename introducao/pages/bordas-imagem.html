@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordas</title>
+    <style>
+        body {
+            font-family: Roboto, sans-serif;
+        }
+
+        .exemplo {
+            background-color: black;
+            width: 200px;
+            height: 200px;
+            border: 40px solid;
+            margin: 50px auto;
+        }
+
+        #exemplo-1 {
+            border-image-source: url("../assets/images/border-star.png");
+            border-image-repeat: space;
+            border-image-slice: 167;
+            /* border-image-width: 10px 20px 30px 40px; */
+            border-image-outset: 50px;
+        }
+
+        #exemplo-2 {
+            border-image-source: linear-gradient(red, purple);
+            border-image-slice: 10;
+        }
+
+        #exemplo-resumido {
+            border-image: url("../assets/images/border-star.png") 167 / 10px / 1 round;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bordas com imagens</h1>
+    
+    <ul>
+        <li>border-image-source</li>
+        <li>border-image-width</li>
+        <li>border-image-repeat</li>
+        <li>border-image-outset</li>
+        <li>border-image-slice</li>
+    </ul>
+
+    <h2>Exemplo:</h2>
+    <div id="exemplo-1" class="exemplo"></div>
+    <br>
+    <div id="exemplo-2" class="exemplo"></div>
+    <br>
+    <div id="exemplo-resumido" class="exemplo"></div>
+</body>
+</html>
