@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+@font-face {
+    font-family: Roboto;
+    src: local(), url("../fonts/Roboto-Regular.ttf");
+    font-weight: normal;
+}
+
+* {
+    font-family: Roboto;
+    /* font-weight: bold; */
+}
+
+h1 {
+    font-family: Dancing Script;
+}
+
+#tamanho {
+    font-size: 40px;
+}
+
+#xx-small {
+    font-size: xx-small;
+}
+
+#x-small {
+    font-size: x-small;
+}
+
+#small {
+    font-size: small;
+}
+
+#medium {
+    font-size: medium;
+}
+
+#large {
+    font-size: large;
+}
+
+#x-large {
+    font-size: x-large;
+}
+
+#xx-large {
+    font-size: xx-large;
+}
+
+#normal {
+    font-style: normal;
+}
+
+#italic {
+    font-style: italic;
+}
+
+#oblique {
+    font-style: oblique;
+}
+
+#exemplo-fv {
+    font-variant: small-caps;
+}
+
+#ultra-condensed {
+    font-stretch: ultra-condensed;
+}
+
+#extra-condensed {
+    font-stretch: extra-condensed;
+}
+
+#condensed {
+    font-stretch: condensed;
+}
+
+#normal-stretch {
+font-stretch: normal;
+}
+
+#semi-expanded {
+font-stretch: semi-expanded;
+}
+
+#expanded {
+    font-stretch: expanded;
+}
+
+#extra-expanded {
+    font-stretch: extra-expanded;
+}
+
+#ultra-expanded {
+    font-stretch: ultra-expanded;
+}
+
+#exemplo-lh {
+    /* line-height: 2.0; */
+    line-height: 200%;
+}
