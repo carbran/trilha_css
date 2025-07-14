@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/display.css">
+    <title>CSS - Display</title>
+</head>
+<body>
+    <h1>Propriedade display</h1>
+    <p>A propriedade display vai determinar como essas caixinhas retangulares irão se comportar na hora de serem exibidas na tela</p>
+
+    <ul>
+        <li>border-width</li>
+        <li>border-style</li>
+        <li>border-color</li>
+    </ul>
+
+    <h2>Exemplos:</h2>
+    <!-- display block é padrão para div e p -->
+    <code>display: block;</code> 
+    <br><br>
+    <div class="exemplo1">Exemplo 01</div>
+    <p class="exemplo1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni qui nesciunt, maiores, dolor aliquam eaque ipsam ex corrupti nisi soluta, molestias error similique odio adipisci ipsum deserunt molestiae itaque quam.</p>
+    <span class="exemplo1">teste</span>
+    <span class="exemplo1">teste</span>
+
+    <br><br>
+    <!-- display inline é o padrão de tags como span, em e b, algumas alterações nesses displays só afetarão os lados, não acima e abaixo pois é inline -->
+    <code>display: inline;</code>
+    <br><br>
+    <span class="exemplo2">teste1</span>
+    <span class="exemplo2">teste2</span>
+    <em class="exemplo2">teste3</em>
+    <p class="exemplo2" style="display: inline;">Teste4</p>
+
+    <br><br>
+    code>display: inline-block;</code>
+    <br><br>
+    <span class="exemplo3">teste1</span>
+    <em class="exemplo3">teste2</em>
+    <b class="exemplo3">Teste4</b>
+
+    <br><br>
+    code>display: none;</code>
+    <br><br>
+    <div class="exemplo4">escondido</div>
+
+    <br><br>
+
+    <h2>display: none; VS visibility: hidden;</h2>
+    <div>
+        <span class="exemplo5-1">Teste 1</span>
+        <span class="exemplo5-2">Teste 2</span>
+        <span class="exemplo5-3">Teste 3</span>
+        <span class="exemplo5-4">Teste 4</span>
+    </div>
+
+    <h2>Alinhamento de elementos inline</h2>
+    <div class="container">
+        <img id="item-01" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/250px-Instagram_icon.png" alt="instagram">
+        <span id="item-02" class="exemplo1">Item 02</span>
+        <span id="item-03" class="exemplo1">Item 03</span>
+    </div>
+</body>
+</html>

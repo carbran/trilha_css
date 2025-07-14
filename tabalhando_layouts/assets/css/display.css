@@ -1,0 +1,54 @@
+.exemplo1 {
+    background-color: aquamarine;
+}
+
+.exemplo2 {
+    background-color: burlywood;
+    width: 200px; /* aqui não funciona*/
+    margin: 10px; /* aplica apenas na horizontal*/
+}
+
+.exemplo3 {
+    background-color: coral;
+    display: inline-block;
+    width: 200px;
+    height: 250px;
+    margin: 20px;
+}
+
+.exemplo4 {
+    background-color: plum;
+    display: none;
+}
+
+.exemplo5-1 {
+    background-color: palevioletred;
+}
+
+.exemplo5-2 {
+    background-color: palevioletred;
+    display: none; /*desaparece total*/
+}
+
+.exemplo5-3 {
+    background-color: palevioletred;
+    visibility: hidden; /* desaparece mas mantem seu espaço, como se ficasse invisível*/
+}
+
+.exemplo5-4 {
+    background-color: palevioletred;
+}
+
+.container {
+    border: 1px solid red;
+    text-align: center;
+}
+
+#item-01 {
+    height: 50px;
+}
+
+#item-02 {
+    text-align: center;
+    vertical-align: top;
+}

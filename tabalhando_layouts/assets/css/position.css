@@ -1,0 +1,58 @@
+.inline {
+    display: inline-block;
+}
+
+.exemplo {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#elemento-1 {
+    background-color: orange;
+}
+
+#elemento-2 {
+    background-color: palevioletred;
+    position: relative; /* se comentar os atributos abaixo não terão efeito*/
+    top: 50px;
+    left: 20px;
+}
+
+#elemento-3 {
+    background-color: palegreen;
+}
+
+#elemento-4 {
+    background-color: paleturquoise;
+}
+
+#elemento-5 {
+    background-color: violet;
+    position: absolute; /* é como se o objeto não estivesse preso a nenhum ponto e os outros elementos não respeitam o espaço original do elemento*/
+    opacity: 0.5;
+    left: 60px;
+}
+
+#elemento-6 {
+    background-color: blueviolet;
+}
+/* filho é absoluto mas em relação ao pai */
+#elemento-pai {
+    width: 50%;
+    box-sizing:  border-box;
+    height: 300px;
+    padding: 10px;
+    border: 1px solid red;
+    position: relative;
+}
+
+#elemento-filho {
+    background-color: palegreen;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+}
