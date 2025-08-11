@@ -1,0 +1,277 @@
+H1{
+    text-align: center;
+}
+/***********GRID 1***********/
+.body1 {
+    display: grid;
+    border: 3px solid;
+    grid-template: repeat(3, 200px) / repeat(3, 200px);
+
+    /* row-gap: 10px;
+    column-gap: 20px; */
+    gap: 10px 20px;
+}
+
+.item-01 {
+    background: palegoldenrod;
+}
+
+.item-02 {
+    background: paleturquoise;
+}
+
+.item-03 {
+    background: palegreen;
+}
+
+.item-04 {
+    background: palevioletred;
+}
+
+.item-05 {
+    background: lightseagreen;
+}
+
+.item-06 {
+    background: blueviolet;
+}
+
+.item-07 {
+    background: palegreen;
+}
+
+.item-08 {
+    background: palegoldenrod;
+}
+
+.item-09 {
+    background: paleturquoise;
+}
+
+/***********GRID 2***********/
+.body2 {
+    display: grid;
+    border: 3px solid;
+    height: 80vh;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+
+    gap: 15px;
+
+    /* justify-items: stretch; PADRÃO */
+    /* justify-items: end; */
+    /* justify-items: center; */
+    /* align-items: stretch; PADRÃO */
+    /* align-items: start; */
+    /* align-items: center; */
+    /* place-items: align-items justify-items */
+    place-items: center stretch;
+}
+
+.item2-01 {
+    background: palegoldenrod;
+}
+
+.item2-02 {
+    background: paleturquoise;
+}
+
+.item2-03 {
+    background: palegreen;
+}
+
+.item2-04 {
+    background: palevioletred;
+}
+
+.item2-05 {
+    background: lightseagreen;
+}
+
+.item2-06 {
+    background: blueviolet;
+}
+
+.item2-07 {
+    background: palegreen;
+}
+
+.item2-08 {
+    background: palegoldenrod;
+}
+
+.item2-09 {
+    background: paleturquoise;
+}
+
+/***********GRID 3***********/
+.body3 {
+    display: grid;
+    border: 3px solid;
+    height: 80vh;
+    grid-template: repeat(3, auto) / repeat(3, auto);
+
+    place-items: center;
+    /* justify-content: center;
+    align-content: center; 
+    palce-content: align-content justify-content */
+    place-content: center;
+}
+
+.item3-01 {
+    background: palegoldenrod;
+}
+
+.item3-02 {
+    background: paleturquoise;
+}
+
+.item3-03 {
+    background: palegreen;
+}
+
+.item3-04 {
+    background: palevioletred;
+}
+
+.item3-05 {
+    background: lightseagreen;
+}
+
+.item3-06 {
+    background: blueviolet;
+}
+
+.item3-07 {
+    background: palegreen;
+}
+
+.item3-08 {
+    background: palegoldenrod;
+}
+
+.item3-09 {
+    background: paleturquoise;
+}
+
+
+
+/***********GRID 4***********/
+.body4 {
+    display: grid;
+    border: 3px solid;
+    height: 80vh;
+    grid-template: repeat(3, auto) / repeat(3, auto);
+    place-items: center;
+}
+
+.item4-01 {
+    background: palegoldenrod;
+}
+
+.item4-02 {
+    background: paleturquoise;
+}
+
+.item4-03 {
+    background: palegreen;
+    /* justify-self: start;
+    align-self: end; */
+    place-self: end start ;
+}
+
+.item4-04 {
+    background: palevioletred;
+}
+
+.item4-05 {
+    background: lightseagreen;
+    /* justify-self: stretch;
+    align-self: stretch; */
+    place-self: stretch;
+}
+
+.item4-06 {
+    background: blueviolet;
+}
+
+.item4-07 {
+    background: palegreen;
+}
+
+.item4-08 {
+    background: palegoldenrod;
+}
+
+.item4-09 {
+    background: paleturquoise;
+}
+/*
+SHORTHAND GRID
+ANTES
+.container {
+    grid-template-rows: 100px 300px;
+    grid-template-columns: 3fr 1fr;
+}
+
+DEPOIS
+.container {
+    grid: 100px 300px / 3fr 1fr;
+}
+
+ANTES
+.container {
+    grid-auto-flow: row;
+    grid-template-columns: 200px 1fr;
+}
+
+DEPOIS
+.container {
+    grid: auto-flow / 200px 1fr;
+}
+
+ANTES
+.container {
+    grid-auto-flow: row dense;
+    grid-auto-rows: 100px;
+    grid-template-columns: 1fr 2fr;
+}
+
+DEPOIS
+.container {
+    grid: auto-flow dense 100px / 1fr 2fr;
+}
+
+ANTES
+.container {
+    grid-template-rows: 100px 300px;
+    grid-auto-flow: column;
+    grid-auto-columns: 200px;
+}
+
+DEPOIS
+.container {
+    grid: 100px 300px / auto-flow 200;
+}
+
+ANTES
+.container {
+    grid-template-areas: 
+        "header header header header"
+        "footer footer footer footer";
+    grid-template-rows: 1fr 25px;
+    grid-template-columns: auto 50px auto;
+}
+
+DEPOIS
+.container {
+    grid:   "header header header header" 1fr
+            "footer footer footer footer" 25px
+            / auto 50px auto;
+}
+
+Gera uma linha com 100px de altura e 2 colunas com 1fr
+grid: 100px / 1fr 1fr
+
+Gera uma linha com 100px de altura. O grid-auto-flow é definido com column (pois está logo antes da definição das colunas). Ele também define o grid-auto-columns com 100px 50px
+grid: 100px / auto-flow 100px 50px
+*/
