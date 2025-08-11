@@ -1,0 +1,104 @@
+h1 {
+    text-align: center;
+}
+
+/************GRID 1************/
+.container {
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 4fr repeat(2, 1fr);
+    grid-template-rows: 50px 100px 200px;
+}
+
+.item {
+    text-align: center;
+    background-color: orange;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+/************GRID 2************/
+
+.container2 {
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 4fr repeat(2, 1fr);
+    grid-template-rows: 50px 100px 200px;
+}
+
+.item2 {
+    text-align: center;
+    background-color: deepskyblue;
+    /* grid-column-start: 1; */
+    /*span indica quantas faixas ele ocupa*/
+    /* grid-column-end: span 3;  */
+    /* grid-row-start: 2; */
+    /* grid-row-end: span 2; */
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 2;
+}
+
+/************GRID 3************/
+
+.container3 {
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 100px)
+}
+
+.item3 {
+    text-align: center;
+    background-color: deeppink;
+}
+
+.selected {
+    background-color: aqua;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+/************GRID 4************/
+
+.container4 {
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 100px)
+}
+
+.item4 {
+    text-align: center;
+    background-color: darkgreen;
+}
+
+.selected2 {
+    background-color: lightsalmon;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+/************GRID 5************/
+
+.container5 {
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: [primeira-linha-col] 1fr [segunda-linha-col] 1fr [terceira-linha-col] 1fr [quarta-linha-col];
+    grid-template-rows: [linha-inicio] 100px [linha-meio] 100px [linha-fim];
+}
+
+.item5 {
+    text-align: center;
+    background-color: blueviolet;
+}
+
+.selected3 {
+    background-color: palegreen;
+    /* grid-column: segunda-linha-col / terceira-linha-col;
+    grid-row: linha-meio / linha-fim; */
+    /* grid-area: <grid-row-start>/<grid-column-start>/<grid-row-end>/<grid-column-end>*/
+    grid-area: linha-meio / segunda-linha-col / linha-fim / terceira-linha-col;
+    /* É possível nomear as áreas do grid e posicionar os itens dentro das áreas específicas, as referenciando através do nome */
+}

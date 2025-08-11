@@ -1,0 +1,81 @@
+.container {
+    background: yellow;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-rows: 1fr 1fr; /*precisa de referencia, no caso é a altura (height)*/
+    /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
+    /*auto-fill: vai definir o maior número possível de colunas em uma linha esmo que elas fiquem vazias*/
+    /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+    /*auto-fit: quando não tiver itens suficientes para preencher o número de linhas ou colunas criadas essas faixas serão recolhidas*/
+}
+
+.item {
+    border: 1px solid black;
+}
+
+.item-01 {
+    background: palevioletred;
+}
+
+.item-02 {
+    background: cornflowerblue;
+}
+
+.item-03 {
+    background: palegreen;
+}
+
+.item-04 {
+    background: orange;
+}
+
+.item-05 {
+    background: cadetblue;
+}
+
+.item-06 {
+    background: aqua;
+}
+
+/******************************GRID 2****************************************/
+.container2 {
+    background: yellow;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: min-content max-content;
+    /*pode usar auto mas ele perde para o fr, se tiver os dois o fr que prevalece*/
+}
+
+.item-2 {
+    border: 1px solid black;
+}
+
+.item-2-01 {
+    background: palevioletred;
+}
+
+.item-2-02 {
+    background: cornflowerblue;
+}
+
+.item-2-03 {
+    background: palegreen;
+}
+
+.item-2-04 {
+    background: orange;
+}
+
+.item-2-05 {
+    background: cadetblue;
+}
+
+.item-2-06 {
+    background: aqua;
+}

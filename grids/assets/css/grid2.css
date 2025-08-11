@@ -1,0 +1,88 @@
+.container {
+    background: yellow;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    /*Quando define-se as colunas e linhas através das propriedades grid-template-columse grid-templa-rows estamos criando um grid explícito. Mas se os itens não couberem, o grid colocará um item fora desse grid que definimos, criando o que chamamos de grid implícito*/
+    grid-auto-rows: 200px; /*define como devem se comportar as linhas caso não haja estilização para ela*/ 
+    grid-auto-columns: 100px; /*define como devem se comportar as colunas caso não haja estilização para ela*/ 
+    grid-auto-flow: column; /*controla como o algoritmo de reposicionamento automático irá se comportar, padrão é o row*/
+}
+
+.item {
+    border: 1px solid black;
+}
+
+.item-01 {
+    background: palevioletred;
+}
+
+.item-02 {
+    background: cornflowerblue;
+}
+
+.item-03 {
+    background: palegreen;
+}
+
+.item-04 {
+    background: orange;
+}
+
+.item-05 {
+    background: cadetblue;
+}
+
+.item-06 {
+    background: aqua;
+}
+
+.item-07{
+    background: tomato;
+}
+
+/*****************************GRID 2************************************/
+
+.container2 {
+    background: yellow;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 250px));
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.item2 {
+    border: 1px solid black;
+}
+
+.item2-01 {
+    background: palevioletred;
+}
+
+.item2-02 {
+    background: cornflowerblue;
+}
+
+.item2-03 {
+    background: palegreen;
+}
+
+.item2-04 {
+    background: orange;
+}
+
+.item2-05 {
+    background: cadetblue;
+}
+
+.item2-06 {
+    background: aqua;
+}
+
+.item2-07{
+    background: tomato;
+}
