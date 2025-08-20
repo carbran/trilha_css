@@ -1,0 +1,10 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    /* column-count: 3; */ /* informa quantas colunas deve ter */
+    column-width: 200px; /* informa o tamanho da coluna e caso tenha espaço gera outras colunas para encaixar nesse tamanho */
+    column-rule: 1px solid gray; /* linha que separa as colunas */
+    column-gap: 100px; /* espaço entre as colunas */
+}
