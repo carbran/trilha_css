@@ -51,3 +51,14 @@ main {
     margin-top: 40px;
     gap: 20px;
 }
+
+/* Exemplo de media queries */
+@media screen and (max-width: 690px) {
+    .details {
+        flex-direction: column;
+    }
+
+    .image-card {
+        flex-basis: 100px;
+    }
+}

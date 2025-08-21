@@ -1,0 +1,164 @@
+/* Media Queries
+Recurso que permite aplicar propriedades do css somente para algumas regras 
+de tipos de mídia específicos 
+
+at-rule | media type |   media feature   | operator |    media feature 
+@media      screen     (min-width: 320px)     and     (max-width: 768px) {
+
+    Estilos CSS aplicados para esse filtro
+    h1 {
+        color: red;
+    }
+}
+
+@media : regra usada para identificar o tipo de mídia que uma página está 
+sendo visualizada, informando os recursos que esse tipo de mídia suporta 
+e os operadores que podem ser combinados para misturar algumas condições
+
+media type (tipo de mídia): Define o tipo de mídia que os estilos CSS 
+devem ser aplicados
+    - all: corresponde a todos os dispositivos;
+    - print: corresponde a documentos que são uma pré-visualização de
+    impressão, ou em qualquer mídia que será voltada a imprimir;
+    - screen: corresponde a dispositivos com telas integradas;
+    - speech: corresponde a dispositivos que leem o conteúdo de forma
+    audível, como um leitor de tela, por exemplo.
+
+media features (recursos de mídia): Configura com quais recursos de mídia
+se quer combinar para aplicar determinados estilos.
+    - min-width/min-height/max-width/max-height/width/height: detecta a 
+    largura e altura da viewport;
+    - orientation: detecta se o dispositivo está em modo retrato ou 
+    paisagem;
+    - hover: indica que a página está sendo acessada através de um 
+    mecanismo de ponteiro, como um mouse;
+    - pointer: detecta quão preciso é o ponteiro (grosso, fino, etc), 
+    ajuda a detectar touchscreen, mouse, etc.
+        ° fine: algo como um mouse ou trackpad;
+        ° coarse: dispositivos touchscreen;
+        ° none: o usuário não possui nenhum dispositivo de "apontamento",
+        ou seja, provavelmente ele está navegando com a ajuda de um 
+        teclado ou um sistema de comando de voz.
+
+operators (operadores): É possível combinar, através de operadores lógicos,
+as media features para atender as condições para aplicar os estilos
+    - AND: deve atender TODAS as media features
+    - OR: deve atender, NO MÍNIMO, uma das media features;
+    - NOT: NEGA as condições aplicadas, invertendo todo o significado do
+    media query.
+
+Maneiras de usar as Media Queries
+
+Além do CSS, as media queries estão presentes, também através do HTML, por
+exemplo, podemos carregar folhas de estilos diferentes de acordo com um 
+media query, ou aplicar na tag <style/>
+
+Breakpoints
+
+Os breakpoint são os pontos de interrupção que colocamos nas media queries
+para tratar a quebra de layout ou ajustar algum conteúdo para determinado 
+dispositivo para deixar as páginas responsivas
+
+Devemos sempre usar Media Queries? Design Acessível X Design Universal
+
+"Um design acessível irá criar uma porta larga para as pessoas de cadeiras
+de rodas entrarem enquanto um design universal irá produzir uma entrada 
+onde qualquer um entraria, desconsiderando suas habilidades."
+Laura Kalbag
+
+Imagens Responsivas
+
+Estratégias para imagens responsivas:
+    1. Definir uma largura máxima com CSS;
+    2. Renderizar diferentes imagens para tamanhos de telas distintos.
+
+Tipografia Responsiva
+
+Estrategias para tipografias responsivas:
+    1. Unidades de medidas relativas;
+    2. Medias Queries.
+
+Mobile First
+
+Desenvolver uma página a partir da menor viewport e ir realizando a 
+adaptação do layout de acordo com que o tamanho da janela de 
+visualização aumenta
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav li {
+    background-color: lightgreen;
+    padding: 8px;
+    border-radius: 4px;
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+#skills {
+    background-color: lightgreen;
+    border: 1px solid green;
+    border-radius: 4px;
+}
+
+#skills li {
+    list-style: decimal;
+}
+
+#education {
+    background-color: lightblue;
+    border: 1px solid blue;
+    border-radius: 4px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+@media screen and (min-width: 720px) {
+    main {
+        flex-direction: row;
+        gap: 24px;
+        max-width: 1200px;
+        margin: 16px auto;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #presentation {
+        flex-basis: 500px;
+    }
+
+    #skills, #education {
+        flex: 1;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav li {
+        flex: 1;
+        text-align: center;
+    }
+}
