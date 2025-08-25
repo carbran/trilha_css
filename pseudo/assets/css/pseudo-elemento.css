@@ -1,0 +1,26 @@
+code {
+    background-color: lightgray;
+}
+
+#aula1 p::first-letter {
+    color: red;
+    background-color: lightseagreen;
+    border: 1px solid black;
+    font-size: 25px;
+    padding: 5px;
+}
+
+#aula2 p::first-line {
+    color: blue;
+    background-color: lightblue;
+    text-decoration: underline;
+}
+
+#aula3 video{
+    height: 400px;
+    width: 400px;
+}
+
+video::backdrop{
+    color: red;
+}
