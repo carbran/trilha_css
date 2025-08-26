@@ -24,3 +24,64 @@ code {
 video::backdrop{
     color: red;
 }
+
+#aula4 summary::marker {
+    color: red;
+    content: "( ͡❛ ͜ʖ ͡❛)";
+}
+
+#aula4 li::marker {
+    color: violet;
+    content: "✪";
+}
+
+#aula5 input::placeholder {
+    color: coral;
+    background: lightblue;
+    text-transform: capitalize;
+}
+
+#aula6 p::selection {
+    background-color: aquamarine;
+    color: blue;
+    text-decoration: underline;
+}
+
+#aula7 input::file-selector-button {
+    border: 2px solid blueviolet;
+    color: violet;
+    background-color: black;
+    padding: 12px;
+    border-radius: 4px;
+}
+
+#aula8 p::before {
+    content: "( ͡❛ ͜ʖ ͡❛)"; /* obrigatório */
+    color: red;
+    background-color: burlywood;
+}
+
+#aula8 p::after {
+    content: "( ͡❛ ͜ʖ ͡❛)";
+    color: blue;
+    background-color: burlywood;
+}
+
+#aula8 .card-image {
+    width: 300px;
+    height: 300px;
+    border: 2px solid gray;
+    border-radius: 16px;
+    background: url("https://picsum.photos/300/300");
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+#aula8 .card-image::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, rgb(0, 255, 140));
+}

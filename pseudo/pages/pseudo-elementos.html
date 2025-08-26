@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/pseudo-elemento.css">
     <title>Pseudo-elementos</title>
 </head>
+
 <body>
     <div id="aula1">
         <h1>Pseudo-elementos</h1>
-        <p>Usado para adicionar elementos extras na página, sem a necessidade de declará-lo no HTML, ou para selecionar uma parte de algum elemento.</p>
+        <p>Usado para adicionar elementos extras na página, sem a necessidade de declará-lo no HTML, ou para selecionar
+            uma parte de algum elemento.</p>
         <p>Identificado por <code>::palavra-chave</code></p>
 
         <h2>Pseudo-elemento - <code>::first-letter</code></h2>
@@ -25,7 +28,7 @@
             <li>Propriedades de texto</li>
         </ul>
     </div>
-    
+
     <div id="aula2">
         <h2>Pseudo-elemento - <code>::first-line</code></h2>
         <p>Seleciona a primeira linha de um texto</p>
@@ -36,17 +39,98 @@
             <li><code>font</code></li>
             <li>Propriedades de Texto</li>
         </ul>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis vero dolorem, id est expedita assumenda quibusdam sint impedit fugit saepe at quia necessitatibus nostrum distinctio neque recusandae quae sunt maxime!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis vero dolorem, id est expedita assumenda
+            quibusdam sint impedit fugit saepe at quia necessitatibus nostrum distinctio neque recusandae quae sunt
+            maxime!</p>
     </div>
-    
+
     <div id="aula3">
         <h2>Pseudo-elemento - <code>::backdrop</code></h2>
-        <p>Estiliza o plano de fundo de elementos em modo de tela cheia, como <code>dialog</code> ou <code>video</code></p>
-        
+        <p>Estiliza o plano de fundo de elementos em modo de tela cheia, como <code>dialog</code> ou <code>video</code>
+        </p>
+
         <video controls>
             <source src="../assets/videos/c2b.mp4">
         </video>
     </div>
-    
+
+    <div id="aula4">
+        <h2>Pseudo-elemento - <code>::marker</code></h2>
+        <p>Permite estilizar os tópicos de uma lista <code>li</code> ou então a flecha de uma elemento
+            <code>summary</code>
+        </p>
+        <details>
+            <summary> Propriedades aceitas:</summary>
+        </details>
+        <ul>
+            <li>color</li>
+            <li>content</li>
+            <li>white-scpace</li>
+            <li>font</li>
+            <li>animation</li>
+            <li>transition</li>
+        </ul>
+    </div>
+
+    <div id="aula5">
+        <h2>Pseudo-elemento - <code>::placeholder</code></h2>
+        <p>Um placeholder é uma dica para ajudar no preenchimento de algum campo de formulário</p>
+
+        <p> Propriedades aceitas:</p>
+
+        <ul>
+            <li>color</li>
+            <li>font</li>
+            <li>background</li>
+            <li>text</li>
+        </ul>
+        <hr>
+        <p>Exemplo</p>
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" placeholder="Ex: Fulano de Tal">
+
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" id="senha" placeholder="Mínimo de 10 caracteres">
+        <hr>
+    </div>
+
+    <div id="aula6">
+        <h2>Pseudo-elemento - <code>::selection</code></h2>
+        <p>Permite estilizar a seleção de texto no navegador</p>
+
+        <p> Propriedades aceitas:</p>
+
+        <ul>
+            <li>color</li>
+            <li>background-color</li>
+            <li>text</li>
+        </ul>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam fugiat, eum earum possimus illo repellendus iste beatae, alias, voluptatem a suscipit porro ipsam velit distinctio numquam ratione. Cumque, ipsam voluptatem.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eveniet. Veritatis inventore iusto mollitia maxime? Officia ipsum aliquam vitae, tempore laborum id quos fuga sapiente eveniet cumque ipsam, possimus culpa?</p>
+    </div>
+
+    <div id="aula7">
+        <h2>Pseudo-elemento - <code>::file-selector-button</code></h2>
+        <p>Permite estilizar o botão de seleção de arquivos</p>
+
+        <form action="">
+            <label for="fileUpload">Upload de arquivos</label>
+            <input type="file" name="fileUpload" id="file-upload">
+        </form>
+    </div>
+
+    <div id="aula8">
+        <h2>Pseudo-elemento - <code>::before</code> e <code>::after</code></h2>
+        <p>
+            <span>Exemplo 1</span>
+            <span>Exemplo 2</span>
+            <span>Exemplo 3</span>
+        </p>
+
+        <div class="card-image"></div>
+    </div>
 </body>
+
 </html>
