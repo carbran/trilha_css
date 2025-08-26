@@ -1,0 +1,136 @@
+code {
+    background-color: lightgray;
+}
+
+/**********************************************AULA1*******************************************/
+#aula1 button {
+    background-color: palevioletred;
+    border: none;
+    padding: 8px 14px;
+    color: white;
+}
+
+#aula1 button:hover {
+    background-color: palegreen;
+    color: darkgreen;
+    border: 1px solid darkgreen;
+    cursor: pointer;
+}
+
+#aula1 .container {
+    width: 100px;
+    height: 100px;
+    background-color: palegoldenrod;
+    margin-top: 30px;
+}
+
+#aula1 .container1:hover {
+    background: url("../images/Lovepik_eye_moutrh.png");
+    background-size: cover;
+}
+
+#aula1 .container:hover button {
+    /* tomar cuidado em qual tag coloco a pseudo-classe*/
+    background-color: purple;
+    color: yellow;
+    border: 1px solid yellow;
+}
+
+/**********************************************AULA2*******************************************/
+#aula2 button {
+    background-color: palevioletred;
+    border: none;
+    padding: 8px 14px;
+    color: white;
+}
+
+#aula2 button:hover {
+    background-color: palegreen;
+    color: darkgreen;
+}
+
+#aula2 button:active {
+    background-color: purple;
+    color: white;
+}
+
+#aula2 a:active {
+    background-color: pink;
+    color: black;
+}
+
+#aula2 h1:active {
+    background-color: greenyellow;
+}
+
+/**********************************************AULA3*******************************************/
+#aula3 label, #aula3 button {
+    display: block;
+    margin: 12px;
+    font-size: 1.5rem;
+}
+
+#aula3 input,
+#aula3 select {
+    font-size: 1.5rem;
+}
+
+#aula3 input:focus {
+    outline: 2px dashed blue;
+}
+
+#aula3 select:focus {
+    outline: 2px dashed green;
+}
+
+#aula3 button:focus {
+    outline: 3px solid red;
+    outline-offset: 2px;
+    background-color: palevioletred;
+    color: white;
+}
+
+#aula3 label:focus-within {
+    font-weight: bold;
+    color: red;
+}
+/* :focus-visible só ativa a estilização caso o foco venha pelo tab, ao clicar não funciona */
+
+/**********************************************AULA4*******************************************/
+#aula4 p:target {
+    background-color: yellow;
+}
+
+#aula4 p:target::before {
+    content: "➜";
+    color: red;
+    margin-right: 10px;
+}
+
+/**********************************************AULA5*******************************************/
+#aula5 button:disabled {
+    background-color: black;
+    color: yellow;
+}
+
+#aula5 button:enabled {
+    background-color: palevioletred;
+    color: white;
+}
+
+/**********************************************AULA6*******************************************/
+#aula6 a:link {
+    
+}
+
+/**********************************************AULA7*******************************************/
+
+
+/**********************************************AULA8*******************************************/
+
+
+/**********************************************AULA9*******************************************/
+
+
+/*********************************************AULA10*******************************************/
+
