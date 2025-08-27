@@ -119,18 +119,453 @@ code {
 }
 
 /**********************************************AULA6*******************************************/
-#aula6 a:link {
-    
+#aula6 .exemplo:link {
+    color: limegreen;
+    background-color: black;
+}
+
+#aula6 .exemplo:visited {
+    color: yellow;
 }
 
 /**********************************************AULA7*******************************************/
-
+#aula7 input:placeholder-shown {
+    border-color: royalblue;
+}
 
 /**********************************************AULA8*******************************************/
+#aula8 input{
+    accent-color: red;
+}
 
+#aula8 input[type="checkbox"]:checked + label{
+    /* box-shadow: 0 0 5px 2px purple; */
+    text-decoration: line-through;
+}
 
+#aula8 input[type="radio"]{
+    accent-color: blue;
+}
+
+#aula8 input[type="radio"]:checked + label{
+    color: blue;
+}
+
+#aula8 option:checked {
+    color: red;
+    font-weight: bold;
+}
+
+#aula8 progress:indeterminate {
+    accent-color: red;
+}
 /**********************************************AULA9*******************************************/
+#aula9 {
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+#aula9 form h3{
+    margin: 0;
+}
 
+#aula9 input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+} 
+
+#aula9 form label, #aula9 form button {
+    display: block;
+    margin-top: 12px;
+}
+
+#aula9 input {
+    padding: 4px 14px;
+    margin-top: 8px;
+}
+
+#aula9 form {
+    border: 1px solid gray;
+    border-radius: 4px;
+    width: 300px;
+    padding: 40px;
+    margin: auto;
+    background-color: rgb(247, 247, 247);
+}
+
+/* #aula9 input:valid {
+    border: 1px solid green;
+    color: green;
+}
+
+#aula9 input:invalid {
+    border: 1px solid red;
+    color: red;
+}
+
+#aula9 input:valid + span {
+    color: green;
+}
+
+#aula9 input:invalid + span {
+    color: red;
+} */
+
+#aula9 input:in-range, #aula9 input:valid {
+    color: green;
+    border: 1px solid green;
+}
+
+#aula9 input:out-of-range, #aula9 input:invalid {
+    color: orangered;
+    border: 1px solid orangered;
+}
+
+#aula9 .error {
+    color: orangered;
+    font-size: .75rem;
+    margin-top: 4px;
+    display: none;
+}
+
+#aula9 input:invalid + .error {
+    display: block;
+}
 /*********************************************AULA10*******************************************/
+#aula10 {
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+#aula10 form h3{
+    margin: 0;
+}
+
+#aula10 input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+} 
+
+#aula10 form label, #aula10 form button {
+    display: block;
+    margin-top: 12px;
+}
+
+#aula10 input {
+    padding: 4px 14px;
+    margin-top: 8px;
+    border-style: solid;
+}
+
+#aula10 form {
+    border: 1px solid gray;
+    border-radius: 4px;
+    width: 300px;
+    padding: 40px;
+    margin: auto;
+    background-color: rgb(247, 247, 247);
+}
+
+#aula10 input:required{
+    border-color: purple;
+}
+
+#aula10 input:optional {
+    border-color: palevioletred;
+}
+/*********************************************AULA11*******************************************/
+#aula11 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#aula11 form h3{
+    margin: 0;
+}
+
+#aula11 input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+} 
+
+#aula11 form label, #aula11 form button {
+    display: block;
+    margin-top: 12px;
+}
+
+#aula11 input {
+    padding: 4px 14px;
+    margin-top: 8px;
+    border-style: solid;
+}
+
+#aula11 form {
+    border: 1px solid gray;
+    border-radius: 4px;
+    width: 300px;
+    padding: 40px;
+    margin: auto;
+    background-color: rgb(247, 247, 247);
+}
+/* só funciona quando os campos são preenchidos de forma automática */
+#aula11 input:-webkit-autofill {
+    border: 1px solid red;
+}
+
+/*********************************************AULA12*******************************************/
+#aula12 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#aula12 form h3{
+    margin: 0;
+}
+
+#aula12 input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+} 
+
+#aula12 form label, #aula12 form button {
+    display: block;
+    margin-top: 12px;
+}
+
+#aula12 input {
+    padding: 4px 14px;
+    margin-top: 8px;
+    border-style: solid;
+}
+
+#aula12 form {
+    border: 1px solid gray;
+    border-radius: 4px;
+    width: 300px;
+    padding: 40px;
+    margin: auto;
+    background-color: rgb(247, 247, 247);
+}
+/* é o mesmo que a tag html, a raiz da página, usada para padronização e variáveis
+:root {
+    background-color: aquamarine;
+} */
+
+/*********************************************AULA13******************************************/
+#aula13 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#aula13 input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+} 
+
+/* Tabela */
+
+#aula13 table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#aula13 th {
+    text-align: left;
+}
+
+#aula13 th, #aula13 td {
+    padding: 1rem;
+}
+
+#aula13 td + #aula13 td,
+#aula13 th + #aula13 th {
+    text-align: right;
+}
+
+/* Exemplos */
+/* qualquer filho na posição indicada, se espeficar qual tag ele vai estilizar aquela tag desde que a posição do filho esteja certa*/
+#aula13 article :nth-child(1) { 
+    color: red;
+}
+
+/* procura a ocorrencia da posição indicada para estilizar, caso não indique tag aplica a todas que cairem na regra, se especificar, estiliza apenas a tag na posição indicada */
+#aula13 article :nth-of-type(2) { 
+    color: blue;
+}
+
+#aula13 #lista-1 li:nth-child(even) {
+    color: red;
+}
+
+#aula13 #lista-1 li:nth-child(odd) {
+    color: blue;
+}
+
+#aula13 tr:nth-child(even) {
+    background-color: lightblue;
+}
+
+#aula13 tr:nth-child(odd) td{
+    background-color: palegoldenrod;
+}
+
+/*********************************************AULA14*******************************************/
+#aula14 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#aula14 input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+} 
+
+/* a primeira tag filha */
+/* #aula14 article :first-child {
+    color: orange;
+} */
+
+/* as primeiras tags filhas de cada tipo */
+#aula14 article :first-of-type {
+    color: orange;
+}
+
+/*********************************************AULA15******************************************/
+#aula15 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#aula15 input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+} 
+
+#aula15 li:nth-last-child(2) {
+    font-weight: bold;
+}
+
+#aula15 dd:nth-last-of-type(2) {
+    color: blueviolet;
+}
+
+#aula15 dl :nth-last-of-type(1) {
+    color: chartreuse;
+}
+
+/*********************************************AULA16*******************************************/
+#aula16 li:only-child {
+    color: red;
+    font-weight: bold;
+}
+
+#aula16 p:only-child {
+    color: red;
+    font-weight: bold;
+}
+
+/*********************************************AULA17******************************************/
+#aula17 i, #aula17 em {
+    display: block;
+}
+
+#aula17 main :only-of-type {
+    color: red;
+}
+
+/*********************************************AULA18*******************************************/
+#aula18 div {
+    height: 16px;
+    background-color: palegreen;
+}
+
+#aula18 #elemento-content::before {
+    content: "!!!!!!!!!";
+}
+
+#aula18 div:empty {
+    border: 2px solid deeppink;
+}
+
+#aula18 p:empty {
+    border: 2px solid deepskyblue;
+}
+
+/*********************************************AULA19******************************************/
+/* #aula19 .post h2,
+#aula19 .post li,
+#aula19 .post .red {
+    color: red;
+} */
+
+#aula19 .post :is(h2, li, .red) {
+    color: blue;
+}
+
+/* #aula19 section p,
+#aula19 article p,
+#aula19 aside p,
+#aula19 nav p {
+    background-color: pink;
+    font-weight: bold;
+} */
+
+#aula19 :is(section, article, aside, nav) p {
+    background-color: pink;
+    font-weight: bold;
+}
+
+/*********************************************AULA20*******************************************/
+/* O :is tem maior prioridade sobre a essa estilização, já :where tem menor prioridade */
+#aula20 section p,
+#aula20 article p,
+#aula20 aside p,
+#aula20 nav p {
+    background-color: deepskyblue;
+}
+
+/* :is é mais prioritário que a estilização anterior */
+/* #aula20 :is(section, article, aside, nav) p {
+    background-color: pink;
+} */
+
+/* :where é menos prioritário que a estilização inicial */
+#aula20 :where(section, article, aside, nav) p {
+    background-color: red;
+}
+
+/*********************************************AULA21******************************************/
+#aula21 .post p:not(.irrelevante) {
+    color: red;
+}
+
+#aula21 li:not(:first-child, :last-child) {
+    font-weight: bold;
+}
+
+#aula21 img:not([alt]) {
+    border: 2px solid red;
+}
+
+/*********************************************AULA22*******************************************/
+#aula22 figure {
+    width: 100px;
+    height: 100%;
+}
+
+#aula22 img {
+    width: 100%;
+    object-fit: cover;
+}
+
+#aula22 .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+#aula22 .gallery figure {
+    box-shadow: 0 0 5px 2px lightgrey;
+}
+
+#aula22 .gallery figcaption {
+    font-size: 0.75rem;
+}
+
+/* #aula22 .gallery figure:has(figcaption) {
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 8px;
+} */
+
+#aula22 .gallery figure:not(:has(figcaption)) {
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 8px;
+}

@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/pseudo-classes.css">
     <title>Pseudo-classes</title>
 </head>
+
 <body>
     <div id="aula1">
         <h1>Pseudo-classes | <code>:hover</code></h1>
-    
+
         <button>Entrar em contato</button>
-    
+
         <div class="container container1"></div>
-    
+
         <div class="container container2"><button>Botão 2</button></div>
     </div>
 
     <div id="aula2">
         <h1>Pseudo-classes | <code>:active</code></h1>
-    
+
         <button>Entrar em contato</button>
         <br><br>
         <a href="Https://dio.me"> Site da DIO</a>
@@ -62,9 +64,13 @@
         </ol>
 
         <h3>Meu artigo</h3>
-        <p id="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, iure rerum beatae corporis magni non totam, possimus vel doloribus a ipsam? Consequuntur aut quod ratione quia ducimus accusantium asperiores totam.</p>
+        <p id="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, iure rerum beatae corporis magni
+            non totam, possimus vel doloribus a ipsam? Consequuntur aut quod ratione quia ducimus accusantium asperiores
+            totam.</p>
 
-        <p id="p2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem ipsam iusto itaque magnam sequi eum veniam. Cupiditate deserunt sit at nostrum magni libero fuga esse quos nemo, aliquam dignissimos pariatur.</p>
+        <p id="p2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem ipsam iusto itaque magnam sequi eum
+            veniam. Cupiditate deserunt sit at nostrum magni libero fuga esse quos nemo, aliquam dignissimos pariatur.
+        </p>
     </div>
 
     <div id="aula5">
@@ -75,8 +81,602 @@
 
     <div id="aula6">
         <h1>Pseudo-classes | <code>:link</code> e <code>:visited</code></h1>
-        
-        <a href="https://www.instagram.com/brandaofernando96/">Me siga no instagram!</a>
+
+        <a href="https://www.instagram.com/brandaofernando96/" class="exemplo">Me siga no instagram!</a>
+        <br><br>
+        <a href="https://www.instagram.com">Instagram!</a>
+    </div>
+
+    <div id="aula7">
+        <h1>Pseudo-classes | <code>:placeholder-shown</code></h1>
+
+        <form action="">
+            <label for="name">Nome Completo:</label>
+            <input type="text" name="name">
+            <br><br>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" placeholder="name@example.com">
+            <br><br>
+            <label for="age">Nome Completo:</label>
+            <input type="number" name="age" value="18" placeholder="Você deve ser maior de 18 anos">
+            <br><br>
+        </form>
+    </div>
+
+    <div id="aula8">
+        <h1>Pseudo-classes | <code>:checked</code> e <code>:indeterminate</code></h1>
+
+        <div>
+            <input type="checkbox" name="task-01">
+            <label for="task-01">Tarefa 01</label>
+        </div>
+        <div>
+            <input type="checkbox" name="task-02">
+            <label for="task-02">Tarefa 02</label>
+        </div>
+        <div>
+            <input type="checkbox" name="task-03">
+            <label for="task-03">Tarefa 03</label>
+        </div>
+        <div>
+            <input type="checkbox" name="task-04">
+            <label for="task-04">Tarefa 04</label>
+        </div>
+        <div>
+            <input type="checkbox" name="task-05">
+            <label for="task-05">Tarefa 05</label>
+        </div>
+
+        <hr>
+
+        <input type="radio" name="genero">
+        <label for="genero">Feminino</label>
+
+        <input type="radio" name="genero">
+        <label for="genero">Masculino</label>
+
+        <input type="radio" name="genero">
+        <label for="genero">Não Binário</label>
+
+        <hr>
+
+        <select name="sabor2" id="sabor2">
+            <option value="chocolate">Chocolate</option>
+            <option value="menta">Menta</option>
+            <option value="morango">Morango</option>
+        </select>
+
+        <hr>
+
+        <progress></progress>
+    </div>
+
+    <div id="aula9">
+        <h1>Pseudo-classes:</h1>
+        <div>
+            <input type="checkbox" name="invalid">
+            <label for="invalid">:invalid</label>
+        </div>
+        <div>
+            <input type="checkbox" name="valid">
+            <label for="valid">:valid</label>
+        </div>
+        <div>
+            <input type="checkbox" name="in-range">
+            <label for="in-range">:in-range</label>
+        </div>
+        <div>
+            <input type="checkbox" name="out-of-range">
+            <label for="out-of-range">:out-of-range</label>
+        </div>
+
+        <hr>
+
+        <form action="">
+            <h3>Faça sua compra:</h3>
+
+            <label for="email" required>E-mail</label>
+            <input type="email" name="email">
+            <span class="error">E-mail inválido</span>
+
+            <label for="codigo-produto">Código Produto:</label>
+            <input type="number" name="codigo-produto" min="1000">
+            <span class="error">Código do Produto inválido</span>
+
+            <label for="cupom">Cumpo de Desconto</label>
+            <input name="cupom" type="text" pattern="[a-z]+" placeholder="Apenas letras minúsculas">
+            <span class="error">Cumpo de Desconto inválido</span>
+
+            <label for="data-nascimento">Data de Nascimento:</label>
+            <input type="date" name="data-nascimento" min="1962-01-01" max="2004-12-31">
+            <span class="error">Data de Nascimento inválida</span>
+
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" name="amount" min="3" max="10">
+            <span class="error">Quantidade inválida</span>
+
+            <label for="termos">
+                <input type="checkbox" required>
+                <span>Li e aceito os termos de uso</span>
+            </label>
+
+            <button type="submit">Comprar</button>
+        </form>
+    </div>
+
+    <div id="aula10">
+        <h1>Pseudo-classes:</h1>
+        <div>
+            <input type="checkbox" name="required">
+            <label for="required">:required</label>
+        </div>
+        <div>
+            <input type="checkbox" name="optional">
+            <label for="optional">:optional</label>
+        </div>
+
+        <hr>
+
+        <form action="">
+            <h3>Faça sua compra:</h3>
+
+            <label for="email" required>E-mail</label>
+            <input type="email" name="email">
+
+            <label for="codigo-produto">Código Produto:</label>
+            <input type="number" name="codigo-produto" min="1000" max="3000" required>
+
+            <label for="cupom">Cumpo de Desconto</label>
+            <input name="cupom" type="text" pattern="[a-z]+" placeholder="Apenas letras minúsculas">
+
+            <label for="data-nascimento">Data de Nascimento:</label>
+            <input type="date" name="data-nascimento" min="1962-01-01" max="2004-12-31" required>
+
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" name="amount" min="3" max="10">
+
+            <button type="submit">Comprar</button>
+        </form>
+    </div>
+
+    <div id="aula11">
+        <h1>Pseudo-classes:</h1>
+        <p>Usado para indicar quando um campo foi preenchido de forma automática (autofill). Devido a compatibilidade
+            algumas pseudo-classes requerem um prefixo, para o google chrome essa classe precisa do -webkit para
+            funcionar</p>
+        <div>
+            <input type="checkbox" name="autofill">
+            <label for="autofill">:autofill</label>
+        </div>
+        <div>
+            <input type="checkbox" name="webkit-autofil">
+            <label for="webkit-autofil">:-webkit-autofil</label>
+        </div>
+
+        <hr>
+
+        <form action="">
+            <h3>Login</h3>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" required>
+
+            <label for="password">Senha</label>
+            <input type="password" name="senha" required>
+
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+
+    <div id="aula12">
+        <h1>Pseudo-classes:</h1>
+        <div>
+            <input type="checkbox" name="root">
+            <label for="root">:root</label>
+        </div>
+
+        <hr>
+
+        <form action="">
+            <h3>Login</h3>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" required>
+
+            <label for="password">Senha</label>
+            <input type="password" name="senha" required>
+
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+
+    <div id="aula13">
+        <h1>Pseudo-classes:</h1>
+        <div>
+            <input type="checkbox" name="nth-child">
+            <label for="nth-child">:nth-child</label>
+        </div>
+        <div>
+            <input type="checkbox" name="nth-of-type">
+            <label for="nth-of-type">:nth-of-type</label>
+        </div>
+
+        <hr>
+
+        <article>
+            <p class="exemplo">I am the first paragraph.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime iste, rem repellendus inventore eaque
+                assumenda quo ut in laudantium voluptatem consequatur aperiam nemo dolor provident corrupti atque
+                deleniti, ipsam quam.</p>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut veniam consequuntur officiis, nesciunt
+                assumenda aspernatur illum recusandae, exercitationem unde, natus tempora. Possimus minima neque, dolore
+                obcaecati corporis ipsam vero aspernatur!</p>
+            <p class="exemplo">I am the last paragraph.</p>
+        </article>
+
+        <hr>
+
+        <div class="listas">
+            <ul id="lista-1">
+                <li>Item 01</li>
+                <li>Item 02</li>
+                <li>Item 03</li>
+                <li>Item 04</li>
+                <li>Item 05</li>
+                <li>Item 06</li>
+                <li>Item 07</li>
+                <li>Item 08</li>
+                <li>Item 09</li>
+                <li>Item 10</li>
+            </ul>
+
+
+            <ul id="lista-2">
+                <li>Categoria 01</li>
+                <li>Categoria 02</li>
+                <li>Categoria 03</li>
+                <li>Categoria 04</li>
+                <li>Categoria 05</li>
+                <li>Categoria 06</li>
+                <li>Categoria 07</li>
+                <li>Categoria 08</li>
+                <li>Categoria 09</li>
+                <li>Categoria 10</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Descrição</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lorem ipsum, dolor sit amet</td>
+                    <td>R$ 123,40</td>
+                </tr>
+                <tr>
+                    <td>Lorem ipsum, dolor sit amet</td>
+                    <td>R$ 70,40</td>
+                </tr>
+                <tr>
+                    <td>Lorem ipsum, dolor sit amet</td>
+                    <td>R$ 333,33</td>
+                </tr>
+                <tr>
+                    <td>Lorem ipsum, dolor sit amet</td>
+                    <td>R$ 123,40</td>
+                </tr>
+                <tr>
+                    <td>Lorem ipsum, dolor sit amet</td>
+                    <td>R$ 70,40</td>
+                </tr>
+                <tr>
+                    <td>Lorem ipsum, dolor sit amet</td>
+                    <td>R$ 333,33</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="aula14">
+        <h1>Pseudo-classes:</h1>
+        <div>
+            <input type="checkbox" name="first-of-type">
+            <label for="first-of-type">:first-of-type</label>
+        </div>
+        <div>
+            <input type="checkbox" name="last-of-type">
+            <label for="last-of-type">:last-of-type</label>
+        </div>
+
+        <hr>
+
+        <article>
+            <span>Eu sou um span</span>
+            <span>Eu sou um span</span>
+            <span>Eu sou um span</span>
+            <span>Eu sou um span</span>
+            <div>Eu sou uma div.</div>
+            <p>Eu sou o primeiro parágrafo.</p>
+            <p>Eu sou o segundo parágrafo.</p>
+            <p>Eu sou o terceiro parágrafo.</p>
+            <p>Eu sou o último parágrafo.</p>
+        </article>
+    </div>
+
+
+
+    <div id="aula15">
+        <h1>Pseudo-classes:</h1>
+        <div>
+            <input type="checkbox" name="nth-last-child">
+            <label for="nth-last-child">:nth-last-child</label>
+        </div>
+        <div>
+            <input type="checkbox" name="nth-last-of-type">
+            <label for="nth-last-of-type">:nth-last-of-type</label>
+        </div>
+
+        <hr>
+
+        <p>Eight deadliest wildfires:</p>
+        <ol reversed>
+            <li>Matheson Fire</li>
+            <li>Miramichi Fire</li>
+            <li>1997 Indonesian fires</li>
+            <li>Thumb Fire</li>
+            <li>Great Hinckley Fire</li>
+            <li>Cloquet Fire</li>
+            <li>Kursha-2 Fire</li>
+            <li>Peshtigo Fire</li>
+        </ol>
+
+        <hr>
+
+        <dl>
+            <dt>Vegetais:</dt>
+            <dd>1. Tomates</dd>
+            <dd>2. Pepinos</dd>
+            <dd>3. Cogumelos</dd>
+            <dt>Frutas:</dt>
+            <dd>4. Maçãs</dd>
+            <dd>5. Mangas</dd>
+            <dd>6. Peras</dd>
+            <dd>7. Laranjas</dd>
+        </dl>
+    </div>
+
+    <div id="aula16">
+        <h1>Pseudo-classes:</h1>
+        <div>
+            <input type="checkbox" name="only-child">
+            <label for="only-child">:only-child</label>
+        </div>
+
+        <hr>
+
+        <p>Único item em uma lista</p>
+        <ul>
+            <li>Item 01</li>
+        </ul>
+
+        <p>Varios itens em uma lista</p>
+        <ul>
+            <li>Item 01</li>
+            <li>Item 02</li>
+            <li>Item 03</li>
+            <li>Item 04</li>
+        </ul>
+
+        <div class="exemplo">
+            <p>Parágrafo 1</p>
+        </div>
+
+        <hr>
+
+        <div>
+            <p>Parágrafo 1</p>
+            <p>Parágrafo 2</p>
+            <p>Parágrafo 3</p>
+        </div>
+    </div>
+
+    <div id="aula17">
+        <h1>Pseudo-classes:</h1>
+        <div>
+            <input type="checkbox" name="only-of-type">
+            <label for="only-of-type">:only-of-type</label>
+        </div>
+
+        <hr>
+
+        <main>
+            <div>Eu sou uma div #1.</div>
+            <p>Eu sou uo único p entre os meus irmãos.</p>
+            <div>Eu sou a div #2.</div>
+            <div>
+                Eu sou a div #3.
+                <i>Eu sou o único filho i</i>
+                <em>Eu sou o em #1.</em>
+                <em>Eu sou o em #2.</em>
+                <p>Eu sou um parágrafo.</p>
+            </div>
+        </main>
+    </div>
+
+    <div id="aula18">
+        <h1>Pseudo-classes:</h1>
+
+        <input type="checkbox" name="empty">
+        <label for="empty">:empty</label>
+
+        <hr>
+
+        <p>Elemento sem conteúdo:</p>
+        <div></div>
+
+        <p>Elemento com comentário:</p>
+        <div>
+            <!-- Simple Comment -->
+        </div>
+
+        <p>Elemento com elemento espaço em branco:</p>
+        <div> </div>
+
+        <p>Elemento com elemento vazio dentro dele:</p>
+        <div>
+            <p></p>
+        </div>
+
+        <p>Elemento com propriedade content:</p>
+        <div id="elemento-content"></div>
+    </div>
+
+    <div id="aula19">
+        <h1>Pseudo-classes:</h1>
+
+        <input type="checkbox" name="is">
+        <label for="is">:is</label>
+
+        <hr>
+
+        <article class="post">
+            <h2>Meu Post</h2>
+            <p>Sumário:</p>
+            <ul>
+                <li>Capítulo 01</li>
+                <li>Capítulo 02</li>
+                <li>Capítulo 03</li>
+                <li>Capítulo04</li>
+            </ul>
+
+            <p class="red">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam provident quibusdam maiores
+                dignissimos reprehenderit qui voluptates saepe suscipit aut inventore, accusantium voluptatibus, id
+                corporis ab iure delectus exercitationem iusto deleniti.</p>
+
+            <p class="red">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quis adipisci repellendus
+                cupiditate a consequatur, expedita quidem. Accusantium esse et, corporis dicta maiores veniam assumenda
+                minus eligendi sequi, suscipit a?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor commodi unde voluptatem asperiores quam
+                pariatur libero quos quo quis voluptatum quisquam, reprehenderit quas laudantium, doloribus vel ipsam
+                nemo eaque. Placeat!</p>
+
+            <hr>
+
+            <section>
+                <p>Exemplo 1</p>
+            </section>
+
+            <article>
+                <p>Exemplo 2</p>
+            </article>
+
+            <aside>
+                <p>Exemplo 3</p>
+            </aside>
+
+            <nav>
+                <p>Exemplo 4</p>
+            </nav>
+        </article>
+    </div>
+
+    <div id="aula20">
+        <h1>Pseudo-classes:</h1>
+
+        <input type="checkbox" name="where">
+        <label for="where">:where</label>
+
+        <hr>
+
+        <p>Funciona como o :is mas o :where é menos prioritário que o :is</p>
+
+        <section>
+            <p>Exemplo 1</p>
+        </section>
+
+        <article>
+            <p>Exemplo 2</p>
+        </article>
+
+        <aside>
+            <p>Exemplo 3</p>
+        </aside>
+
+        <nav>
+            <p>Exemplo 4</p>
+        </nav>
+    </div>
+
+    <div id="aula21">
+        <h1>Pseudo-classes:</h1>
+
+        <input type="checkbox" name="not">
+        <label for="not">:not</label>
+
+        <hr>
+
+        <div class="post">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni amet aperiam recusandae voluptatibus nostrum quasi quos culpa quas beatae itaque expedita, perferendis rerum. Dicta repudiandae sed sit quas vitae est.</p>
+
+            <p>Lorem <strong>ipsum dolor</strong> sit amet consectetur, adipisicing elit. Necessitatibus maiores nam quisquam ex ducimus eligendi labore ipsum error sed excepturi impedit enim beatae, vitae recusandae quam et eum quidem corrupti?</p>
+
+            <p>Lorem ipsum dolor sit <strong>amet, consectetur</strong> adipisicing elit. Iste ab repellat necessitatibus sunt magni vitae! Quo saepe illo fugit expedita quam eum nam et. Voluptatibus quae inventore error porro quia.</p>
+
+            <p class="irrelevante">Ignorar este parágrafo</p>
+        </div>
+
+        <hr>
+
+        <ul>
+            <li>Item 01</li>
+            <li>Item 02</li>
+            <li>Item 03</li>
+            <li>Item 04</li>
+            <li>Item 05</li>
+        </ul>
+
+        <hr>
+
+        <br><br>
+
+        <img width="200" src="https://picsum.photos/200" alt="Com texto alternativo">
+        <img width="200" src="https://picsum.photos/200?grayscale">
+    </div>
+
+    <div id="aula22">
+        <h1>Pseudo-classes:</h1>
+
+        <input type="checkbox" name="has">
+        <label for="has">:has</label>
+
+        <hr>
+
+        <div class="gallery">
+            <figure class="image">
+                <img src="https://picsum.photos/100" alt="">
+                <figcaption>Legenda da Imagem</figcaption>
+            </figure>
+            <figure class="image">
+                <img src="https://picsum.photos/100" alt="">
+                <figcaption>Legenda da Imagem</figcaption>
+            </figure>
+            <figure class="image">
+                <img src="https://picsum.photos/100" alt="">
+            </figure>
+            <figure class="image">
+                <img src="https://picsum.photos/100" alt="">
+            </figure>
+            <figure class="image">
+                <img src="https://picsum.photos/100" alt="">
+                <figcaption>Legenda da Imagem</figcaption>
+            </figure>
+        </div>
     </div>
 </body>
 </html>
