@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(247, 247, 247);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    background: #FC466B;
+    /* animation-name: change-background;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+    /* animation: change-background 5s linear 2s infinite alternate; */
+    animation: change-background 4s infinite alternate;
+}
+
+.box:hover {
+    animation-play-state: paused;
+}
+
+@keyframes change-background {
+    0% {
+        background: palegreen;
+    }
+    50% {
+        background: dodgerblue;;
+    }
+    100% {
+        background: purple;;
+    }
+}

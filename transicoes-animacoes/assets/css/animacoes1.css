@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(247, 247, 247);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    background: #FC466B;
+    animation-name: change-background;
+    animation-duration: 4s;
+    /* animation-delay: 10s; */
+    /* animation-iteration-count: infinite; */
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+    /* defini qual keyframe ele vai manter após terminar a animação
+    backwards: mantem o primeiro no ínicio
+    afterwards: mantem o último após o fim
+    both: mantem os dois */
+    animation-fill-mode: both;
+}
+
+/* 
+A regra @keyframes em CSS é utilizada para definir os passos (ou "quadros-chave") de uma 
+animação, controlando a mudança gradual de estilos CSS de um elemento ao longo do tempo. 
+Essencialmente, ela cria um "roteiro" para a animação, especificando como um elemento 
+deve se parecer e se comportar em diferentes pontos da sequência. 
+*/
+@keyframes change-background {
+    /* from {
+        background: palegreen;
+    }
+    to {
+        background: purple;
+    } */
+    0% {
+        background: purple;
+        width: 200px;
+        height:200px;
+    }
+    33% {
+        background: palegreen;
+        width: 100px;
+        height:300px;
+    }
+    66% {
+        background: dodgerblue;
+        width: 300px;
+        height: 100px;
+    }
+    100% {
+        background: purple;
+        width: 200px;
+        height: 200px;
+    }
+}
