@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(247, 247, 247);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Para aplicar tridimensionalidade o perspective deve estar no elemento-pai */
+    perspective: 300px;
+    /* perspective-origin: top; */
+}
+
+.box {
+    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+    width: 200px;
+    height: 200px;
+    border-radius: 8%;
+    /* rotacionando em todos os eixos */
+    /* transform: rotateY(40deg) rotateX(20deg) rotateZ(20deg); */
+    /* Movimenta no eixo Z, valores maiores parecem se aproximar da tela, menores afastam */
+    /* transform: translateZ(100px); */
+    /* transform-origin especifica o ponto em torno do qual as transformações de um elemento
+    serão aplicadas */
+    transform-origin: top;
+    /* define o tempo que uma transformação demora para acontecer */
+    transition: 1s;
+}
+
+.box:hover {
+    /* transform: scaleZ(-4) rotate(20deg); */
+    transform: rotate(40deg);
+}
