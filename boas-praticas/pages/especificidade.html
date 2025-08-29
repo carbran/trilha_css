@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/especificidade.css">
+    <title>Boas Práticas - Especificidade</title>
+
+    <style>
+        /* Mesmo estando aqui, por ser menos específico ele altera apenas o p que não é específico */
+        p {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <main id="conteudo">
+        <!-- Inline tem maior prioridade que as declarações específicas -->
+        <p style="background-color: blue;" class="texto">Texto 01</p>
+        <p>Texto 02</p>
+    </main>
+
+    <p>Texto 03</p>
+
+    <br><hr><br>
+
+    <h6>Cálculo de Especificidade</h6>
+    <ol>
+        <li>Inline: 1000 pontos;</li>
+        <li>Id: 100 pontos;</li>
+        <li>Classes, pseudo-classes e atributos: 10 pontos;</li>
+        <li>Tag HTML: 1 ponto.</li>
+    </ol>
+
+    <br><hr><br>
+
+    <ul>
+        <li><strong>#exemplo h1.titulo</strong> = 111 pontos</li>
+        <li><strong>a:hover</strong> = 11 pontos</li>
+        <li><strong>div p</strong> = 2 pontos</li>
+    </ul>
+</body>
+</html>

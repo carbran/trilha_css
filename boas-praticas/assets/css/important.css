@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* !important altera a prioridade aumentando a força da declaração */
+p {
+    color: red !important;
+    font-size: 1.5rem;
+}
+
+div p {
+    color: blue;
+    font-size: 2rem;
+}

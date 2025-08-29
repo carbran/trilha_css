@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* Os elementos filhos vão herdar esse atributo mas nem todos os atributos são herdados */
+    color: red;
+}
+
+.teste {
+    padding: 8PX;
+    border: 2px solid blue;
+}
+
+/* Padding e border não são herdadas naturalmente, a palavra inherit força a herança */
+.teste p {
+    padding: inherit;
+    border: inherit;
+}

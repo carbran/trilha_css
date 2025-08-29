@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    width: 500px;
+    margin: auto;
+}
+
+/* Ordem de prioridade:
+    1. Style na própria tag;
+    2. Style na head do Html;
+    3. Style no CSS externo;
+*/
+
+h2 {
+    color: white;
+    background-color: red;
+}

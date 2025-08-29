@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    background-color: palegreen;
+}
+
+#conteudo p {
+    background-color: palevioletred;
+}
+
+/* Mais específico tem maior prioridade */
+#conteudo p.texto {
+    background-color: paleturquoise;
+}
+
+/* :not não é considerada no cálculo de especificidade */
