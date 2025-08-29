@@ -17,3 +17,5 @@ Trilha de CSS
 [Guia para Primeiro Site Estático](https://www.staticguide.org/)
 
 [Estilo CSS - SMACSS](https://smacss.com/)
+
+[Curso de Tailwind CSS](https://web.dio.me/course/introducao-ao-tailwind-css/learning/01a93c38-6e34-45eb-b83d-bc844e2c492d?autoplay=1)
