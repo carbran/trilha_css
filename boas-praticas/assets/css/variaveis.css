@@ -1,0 +1,51 @@
+/* 
+VARIÁVEIS CSS
+Declaração: --nome-da-variavel
+Referência: var(--nome-da-variavel)
+*/
+
+:root {
+    --font-size-title: 5rem;
+    --text-color: red;
+}
+
+.light-theme {
+    --bg-gradient: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+    --bg-body: rgb( 247, 247, 247);
+    --box-shadow-default: 10px 10px 10px gray;
+}
+
+.dark-theme {
+    --bg-gradient: linear-gradient(90deg, #D53369 0%, #DAAE51 100%);
+    --bg-body: rgb( 34, 34, 34);
+    --box-shadow-default: 10px 10px 10px rgb(15,15,15);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg-body);
+    text-align: center;
+}
+
+h1 {
+    background: var(--bg-gradient);
+    font-size: var(--font-size-title);
+    text-align: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+a {
+    text-decoration: none;
+    background: var(--bg-gradient);
+    padding: 8px 14px;
+    border-radius: 4px;
+    color: white;
+    box-shadow: var(--box-shadow-default);
+}
+
+/* fallback, caso a variável não exista usará o segundo valor */
+p {
+    color: var(--text-color, blue);
+}
